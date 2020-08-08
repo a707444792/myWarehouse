@@ -1,0 +1,46 @@
+  选择排序
+    for( i=0;i<sp.length;i++){
+    var kmin = i;
+    for( j=i+1;j<sp.length+1;j++){
+    if(sp[kmin] > sp[j])
+    {kmin=j;}}
+    if(kmin != i)
+    {t = sp[kmin];
+     sp[kmin] = sp[i];
+     sp[i]=t;}
+
+   插入排序
+   for(var i=1;i<aa.length;i++){      
+     var j =0;
+      for(var j=0;j<i;j++){        
+     var k =0;
+        if((parseInt(aa[j])>parseInt(aa[i]))){
+          var temp=aa[i];
+          for(var k=i;k>j;k--)
+          aa[k]=aa[k-1];
+          aa[j]=temp;
+
+   堆排序  //不能用
+    for(var i=1;i<aa.length;i++){
+      var temp = aa[i];
+      var j=i;
+      for(;j>0;j--){
+        if((parseInt(aa[j-1])>parseInt(temp))){
+          aa[j]=aa[j-1];}
+        else{break;}}
+      if(j!=1)
+      aa[j]=temp;
+
+   冒泡排序
+    for(var i=0;i<aa.length-1;i++){
+      for(var j=i+1;j<aa.length;j++){
+      if(aa[j]<aa[i]){
+        temp=aa[i];
+        aa[i]=aa[j];
+        aa[j]=temp;
+
+  倒序
+  for(var i=0;i < aa.length/2;i++){
+  var temp=aa[i];
+  aa[i]=aa[aa.length-1-i];
+  aa[aa.length-1-i]=temp;}
