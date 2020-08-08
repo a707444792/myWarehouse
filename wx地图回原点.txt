@@ -1,0 +1,5 @@
+  地图回原点
+  clickcontrol(e) {
+  let mpCtx = wx.createMapContext("map");
+  mpCtx.moveToLocation();
+ },
