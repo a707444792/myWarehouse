@@ -1,0 +1,7 @@
+
+<script>
+			document.querySelector('html').onclick = function() {
+			    alert('别戳我，我怕疼。');
+			}
+			//弹窗
+		</script>

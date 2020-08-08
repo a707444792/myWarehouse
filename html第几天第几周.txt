@@ -1,0 +1,19 @@
+<script>
+			function getxq(date) {
+				var d1 = new Date();
+				var d2 = new Date();
+				//下面是获取今年1月号是第几周
+				var Y = d1.getFullYear()
+				var resDate = Y + '-' + '01' + '-' + '01'
+				var W = new Date(Date.parse(resDate)).getDay() //今年的1月1号周几
+				//下面是获取今天是本年第几天
+				d2.setMonth(0);
+				d2.setDate(1);
+				var rq = d1 - d2;
+				var s1 = Math.ceil(rq / (24 * 60 * 60 * 1000));
+				//（今年的第一天在周数）/7 等于第几周
+				var s2 = Math.ceil((s1 + W) / 7);
+				console.log('到了')
+				console.log("今天是本年第" + s1 + "天，第" + s2 + "周");
+			}
+		</script>

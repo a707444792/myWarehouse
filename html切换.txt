@@ -1,0 +1,13 @@
+<img src="./images/xx1.png" />
+		<script> //点击切换
+			let myImage = document.querySelector('img');
+			
+			myImage.onclick = function() {
+			    let mySrc = myImage.getAttribute('src');
+			    if(mySrc === '../../xx1.png') {
+			      myImage.setAttribute('src', './images/xx1.png');
+			    } else {
+			      myImage.setAttribute('src', './images/xx2.png');
+			    }
+			}
+		</script>
