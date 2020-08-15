@@ -1,0 +1,10 @@
+<button type="button" class="layui-btn layui-btn-sm" lay-event="add">
+<i class="layui-icon">&#xe654;</i>
+</button>			
+<button type="button" class="layui-btn layui-btn-sm" lay-event="alter">
+<i class="layui-icon">&#xe642;</i>
+</button>	
+<button type="button" class="layui-btn layui-btn-sm" lay-event="delete">
+<i class="layui-icon">&#xe640;</i>
+</button> -->
+//layui表格新增修改删除图标按钮
