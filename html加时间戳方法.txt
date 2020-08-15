@@ -1,3 +1,4 @@
+<script src="web/assets/js/Tool.js"></script>  引入JS；
 普通获取表格加时间戳：url: encodeURI(m_SysBaseUrl + 'PrizesTable.ashx ?Tick='+GetTickStamp()),
 ajax加时间戳：url: encodeURI(m_SysBaseUrl + 'SysManage.ashx?opType=V1_User_Alter&Param=' + param + '&Tick=' + GetTickStamp()),
 
